@@ -4,10 +4,10 @@
  * gives you the power of a plugin developer from within the confines of a theme.  Use this feature
  * wisely, please.
  *
- * @package    TwentyFifteen25
+ * @package    Twenty15
  * @author     Thiago Senna <thiago@thremes.com.br>
  * @copyright  Copyright (c) 2015, Thiago Senna
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-require_once( 'lib/twentyfifteen25.php' );
+require_once( 'lib/twenty15.php' );

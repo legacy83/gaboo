@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Class TwentyFifteen25
+ * Class Twenty15
  *
  */
-final class TwentyFifteen25
+final class Twenty15
 {
     function __after_setup_theme()
     {
@@ -28,25 +28,20 @@ final class TwentyFifteen25
      */
     function color_schemes( $color_schemes )
     {
-        unset( $color_schemes[ 'dark' ] );
-        unset( $color_schemes[ 'yellow' ] );
-        unset( $color_schemes[ 'pink' ] );
-        unset( $color_schemes[ 'purple' ] );
-        unset( $color_schemes[ 'blue' ] );
-
-        $color_schemes[ 'twentyfifteen25' ] = array(
-            'label' => __( 'TwentyFifteen25', 'twentyfifteen25' ),
-            'colors' => array(
-                '#2d2d2d',
-                '#252525',
-                '#ffffff',
-                '#646464',
-                '#ffffff',
-                '#fcfcfc',
+        return array(
+            'default' => $color_schemes[ 'default' ],
+            'twenty15' => array(
+                'label' => __( 'Twenty15', 'twenty15' ),
+                'colors' => array(
+                    '#2d2d2d',
+                    '#252525',
+                    '#ffffff',
+                    '#646464',
+                    '#ffffff',
+                    '#fcfcfc',
+                ),
             ),
         );
-
-        return $color_schemes;
     }
 
 }

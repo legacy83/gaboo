@@ -5,21 +5,21 @@
  * yours can manage. Do you humans ever listen to the cries of mercy coming
  * from pigs and cows you slaughter?" ~ Meruem | Hunter x Hunter
  *
- * @package    TwentyFifteen25
+ * @package    Twenty15
  * @author     Thiago Senna <thiago@thremes.com.br>
  * @copyright  Copyright (c) 2015, Thiago Senna
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-require_once( 'inc/class-twentyfifteen25-google-fonts.php' );
+require_once( 'inc/class-twenty15-google-fonts.php' );
 
 /*
  * Turn on the lights
  * ... and bootstrap the theme
  */
 
-require_once( 'class-twentyfifteen25.php' );
-require_once( 'class-twentyfifteen25-assets.php' );
+require_once( 'class-twenty15.php' );
+require_once( 'class-twenty15-assets.php' );
 
-__gaboo_after_setup_theme( new TwentyFifteen25() );
-__gaboo_after_setup_theme( new TwentyFifteen25_Assets() );
+__gaboo_after_setup_theme( new Twenty15() );
+__gaboo_after_setup_theme( new Twenty15_Assets() );
