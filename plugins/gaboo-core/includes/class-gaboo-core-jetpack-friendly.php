@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Class P2C_Core_Jetpack_Friendly
+ * Class Gaboo_Core_Jetpack_Friendly
  *
  */
-final class P2C_Core_Jetpack_Friendly
+final class Gaboo_Core_Jetpack_Friendly
 {
     function __plugins_loaded()
     {

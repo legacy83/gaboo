@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Class P2C_Core_Lock
+ * Class Gaboo_Core_Lock
  *
  */
-final class P2C_Core_Lock
+final class Gaboo_Core_Lock
 {
     function __run()
     {

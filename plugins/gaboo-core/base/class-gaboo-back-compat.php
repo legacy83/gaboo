@@ -1,15 +1,15 @@
 <?php
 
 /**
- * Class P2C_Back_Compat
+ * Class Gaboo_Back_Compat
  */
-final class P2C_Back_Compat
+final class Gaboo_Back_Compat
 {
     function __run()
     {
         $safe = $this->safe();
-        if ( $safe ) do_action( 'p2c_back_compat_safe' );
-        if ( !$safe ) do_action( 'p2c_back_compat_unsafe' );
+        if ( $safe ) do_action( 'gaboo_back_compat_safe' );
+        if ( !$safe ) do_action( 'gaboo_back_compat_unsafe' );
         if ( !$safe ) add_action( 'admin_notices', array( $this, 'unsafe_notice' ) );
     }
 
@@ -51,8 +51,8 @@ final class P2C_Back_Compat
      */
     function unsafe_notice()
     {
-        $message = __( 'Unsafe environment for running the functionality plugin!', 'p2c-core' );
-        $message .= __( '&nbsp;Minimal system requirements was not satisfied.', 'p2c-core' );
+        $message = __( 'Unsafe environment for running the functionality plugin!', 'gaboo-core' );
+        $message .= __( '&nbsp;Minimal system requirements was not satisfied.', 'gaboo-core' );
         printf( '<div class="error"><p>%s</p></div>', $message );
     }
 

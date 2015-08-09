@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Class P2C_Core_PureCSS
+ * Class Gaboo_Core_PureCSS
  *
  */
-final class P2C_Core_PureCSS
+final class Gaboo_Core_PureCSS
 {
     function __plugins_loaded()
     {

@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Class P2C_Core_Clip
+ * Class Gaboo_Core_Clip
  *
  */
-abstract class P2C_Core_Clip
+abstract class Gaboo_Core_Clip
 {
     /**
      * Render/Clip the template

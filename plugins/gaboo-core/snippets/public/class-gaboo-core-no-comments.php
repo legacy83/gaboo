@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Class P2C_Core_No_Comments
+ * Class Gaboo_Core_No_Comments
  *
  */
-final class P2C_Core_No_Comments
+final class Gaboo_Core_No_Comments
 {
     function __plugins_loaded()
     {
