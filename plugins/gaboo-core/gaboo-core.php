@@ -48,6 +48,8 @@ function gaboo_core_safe_bootstrap()
 {
     __gaboo_plugins_loaded( new Gaboo_Core_Activated_Last( __FILE__ ) );
     __gaboo_plugins_loaded( new Gaboo_Core_Jetpack_Friendly() );
+    __gaboo_plugins_loaded( new Gaboo_Core_No_Comments() );
+    __gaboo_plugins_loaded( new Gaboo_Core_PureCSS() );
 }
 
 /*

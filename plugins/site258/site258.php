@@ -34,8 +34,6 @@ function site258_safe_includes()
  */
 function site258_safe_bootstrap()
 {
-    __gaboo_plugins_loaded( new Gaboo_Core_No_Comments() );
-    __gaboo_plugins_loaded( new Gaboo_Core_PureCSS() );
     __gaboo_plugins_loaded( new Site258_Assets() );
     __gaboo_plugins_loaded( new Site258_Shortcodes() );
 }
