@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Site258 Functionality
- * Plugin URI:   https://github.com/trsenna/parent2child-blueprints
+ * Plugin URI:   https://github.com/trsenna/gaboo
  * Description: All functionality needed by the Site258 website.
  *
  * Version: 0.1.0
@@ -14,9 +14,9 @@
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-add_action( 'p2c_back_compat_safe', 'site258_safe_includes' );
-add_action( 'p2c_back_compat_safe', 'site258_safe_bootstrap' );
-add_action( 'p2c_back_compat_safe', 'site258_safe_themes' );
+add_action( 'gaboo_back_compat_safe', 'site258_safe_includes' );
+add_action( 'gaboo_back_compat_safe', 'site258_safe_bootstrap' );
+add_action( 'gaboo_back_compat_safe', 'site258_safe_themes' );
 
 /**
  * Safely continues
@@ -34,10 +34,10 @@ function site258_safe_includes()
  */
 function site258_safe_bootstrap()
 {
-    __p2c_plugins_loaded( new P2C_Core_No_Comments() );
-    __p2c_plugins_loaded( new P2C_Core_PureCSS() );
-    __p2c_plugins_loaded( new Site258_Assets() );
-    __p2c_plugins_loaded( new Site258_Shortcodes() );
+    __gaboo_plugins_loaded( new Gaboo_Core_No_Comments() );
+    __gaboo_plugins_loaded( new Gaboo_Core_PureCSS() );
+    __gaboo_plugins_loaded( new Site258_Assets() );
+    __gaboo_plugins_loaded( new Site258_Shortcodes() );
 }
 
 /**
