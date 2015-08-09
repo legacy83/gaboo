@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Site258 Functionality
- * Plugin URI:   https://github.com/trsenna/gaboo
+ * Plugin URI: https://github.com/trsenna/gaboo
  * Description: All functionality needed by the Site258 website.
  *
  * Version: 0.1.0
