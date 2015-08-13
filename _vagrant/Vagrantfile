@@ -1,29 +1,14 @@
 Vagrant.configure("2") do |config|
  
-  config.vm.box = "trsenna/gozma12/wp"
+  config.vm.box = "gozma14/wp"
  
   config.vm.hostname = "gaboo"
-  config.vm.network "private_network", ip: "192.168.27.12"
+  config.vm.network "private_network", ip: "192.168.27.14"
 
   config.vm.synced_folder "..", "/vagrant"
-  config.vm.synced_folder "../plugins/gaboo-core", "/var/www/www.192.168.27.12.xip.io/public_html/wp-content/plugins/gaboo-core"
-  config.vm.synced_folder "../plugins/gaboo-lock", "/var/www/www.192.168.27.12.xip.io/public_html/wp-content/plugins/gaboo-lock"
-  config.vm.synced_folder "../plugins/gaboo-piwik", "/var/www/www.192.168.27.12.xip.io/public_html/wp-content/plugins/gaboo-piwik"
-  config.vm.synced_folder "../plugins/site258", "/var/www/www.192.168.27.12.xip.io/public_html/wp-content/plugins/site258"
- 
-  # Gozma12 Provision
- 
-  #config.vm.provision "shell", path: "https://raw.githubusercontent.com/trsenna/gozma12/master/cli/core.sh"
-  #config.vm.provision "shell", path: "https://raw.githubusercontent.com/trsenna/gozma12/master/cli/lamp.sh"
-  #config.vm.provision "shell", path: "https://raw.githubusercontent.com/trsenna/gozma12/master/cli/lapp.sh"
- 
-  # Local Provision
- 
-  #config.vm.provision "shell", path: "cli/provision.sh"
- 
-  # Gozma12 Cookbook Provision
- 
-  #config.vm.provision "shell", path: "https://raw.githubusercontent.com/trsenna/gozma12-cookbook/master/book/recipes/php5DEV-env.sh"
-  #config.vm.provision "shell", path: "https://raw.githubusercontent.com/trsenna/gozma12-cookbook/master/book/recipes/wpDEV-env.sh"
+  config.vm.synced_folder "../plugins/gaboo-core", "/var/www/www.192.168.27.14.xip.io/public_html/wp-content/plugins/gaboo-core"
+  config.vm.synced_folder "../plugins/gaboo-lock", "/var/www/www.192.168.27.14.xip.io/public_html/wp-content/plugins/gaboo-lock"
+  config.vm.synced_folder "../plugins/gaboo-piwik", "/var/www/www.192.168.27.14.xip.io/public_html/wp-content/plugins/gaboo-piwik"
+  config.vm.synced_folder "../plugins/site258", "/var/www/www.192.168.27.14.xip.io/public_html/wp-content/plugins/site258"
  
 end
