@@ -51,8 +51,8 @@ final class Gaboo_Back_Compat
      */
     function unsafe_notice()
     {
-        $message = __( 'Unsafe environment for running the functionality plugin!', 'gaboo-core' );
-        $message .= __( '&nbsp;Minimal system requirements was not satisfied.', 'gaboo-core' );
+        $message = __( 'Unsafe environment for running the functionality plugin!', 'gaboo' );
+        $message .= __( '&nbsp;Minimal system requirements was not satisfied.', 'gaboo' );
         printf( '<div class="error"><p>%s</p></div>', $message );
     }
 

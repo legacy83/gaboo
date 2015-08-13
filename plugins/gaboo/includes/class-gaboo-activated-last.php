@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Class Gaboo_Core_Activated_Last
+ * Class Gaboo_Activated_Last
  *
  */
-final class Gaboo_Core_Activated_Last
+final class Gaboo_Activated_Last
 {
     /**
      * @var string $file The filename of plugin.
