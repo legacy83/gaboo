@@ -14,10 +14,8 @@
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-add_action( 'gaboo_back_compat_safe', 'gaboo_core_safe_includes', 3 );
-add_action( 'gaboo_back_compat_safe', 'gaboo_core_safe_bootstrap', 3 );
-
-ini_set( 'display_errors', '1' );
+//add_action( 'gaboo_back_compat_safe', 'gaboo_core_safe_includes', 3 );
+//add_action( 'gaboo_back_compat_safe', 'gaboo_core_safe_bootstrap', 3 );
 
 /**
  * Safely continues
@@ -25,12 +23,11 @@ ini_set( 'display_errors', '1' );
  */
 function gaboo_core_safe_includes()
 {
-    require_once( 'includes/class-gaboo-core-activated-last.php' );
-    require_once( 'includes/class-gaboo-core-assets.php' );
-    require_once( 'includes/class-gaboo-core-clip.php' );
-    require_once( 'includes/class-gaboo-core-comments.php' );
-    require_once( 'includes/class-gaboo-core-jetpack-friendly.php' );
-    require_once( 'includes/class-gaboo-core-lock.php' );
+//    require_once( 'includes/class-gaboo-core-assets.php' );
+//    require_once( 'includes/class-gaboo-core-clip.php' );
+//    require_once( 'includes/class-gaboo-core-comments.php' );
+//    require_once( 'includes/class-gaboo-core-jetpack-friendly.php' );
+//    require_once( 'includes/class-gaboo-core-lock.php' );
 }
 
 /**
@@ -39,17 +36,7 @@ function gaboo_core_safe_includes()
  */
 function gaboo_core_safe_bootstrap()
 {
-    __gaboo_plugins_loaded( new Gaboo_Core_Activated_Last( __FILE__ ) );
-    __gaboo_plugins_loaded( new Gaboo_Core_Assets() );
-    __gaboo_plugins_loaded( new Gaboo_Core_Comments() );
-    __gaboo_plugins_loaded( new Gaboo_Core_Jetpack_Friendly() );
+//    __gaboo_plugins_loaded( new Gaboo_Core_Assets() );
+//    __gaboo_plugins_loaded( new Gaboo_Core_Comments() );
+//    __gaboo_plugins_loaded( new Gaboo_Core_Jetpack_Friendly() );
 }
-
-/*
- * Turn on the lights
- * ... and bootstrap the plugin
- */
-
-require_once( 'base/gaboo-bootstrap.php' );
-require_once( 'base/class-gaboo-back-compat.php' );
-__gaboo_run( new Gaboo_Back_Compat() );
