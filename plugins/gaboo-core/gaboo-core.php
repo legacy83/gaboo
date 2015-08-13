@@ -15,8 +15,9 @@
  */
 
 add_action( 'gaboo_back_compat_safe', 'gaboo_core_safe_includes', 3 );
-add_action( 'gaboo_back_compat_safe', 'gaboo_core_safe_snippets', 3 );
 add_action( 'gaboo_back_compat_safe', 'gaboo_core_safe_bootstrap', 3 );
+
+ini_set('display_errors', '1');
 
 /**
  * Safely continues
@@ -25,19 +26,10 @@ add_action( 'gaboo_back_compat_safe', 'gaboo_core_safe_bootstrap', 3 );
 function gaboo_core_safe_includes()
 {
     require_once( 'includes/class-gaboo-core-activated-last.php' );
+    require_once( 'includes/class-gaboo-core-assets.php' );
     require_once( 'includes/class-gaboo-core-clip.php' );
     require_once( 'includes/class-gaboo-core-jetpack-friendly.php' );
     require_once( 'includes/class-gaboo-core-lock.php' );
-}
-
-/**
- * Safely continues
- * ... including some really cool snippets
- */
-function gaboo_core_safe_snippets()
-{
-    require_once( 'snippets/public/class-gaboo-core-no-comments.php' );
-    require_once( 'snippets/public/class-gaboo-core-purecss.php' );
 }
 
 /**
@@ -47,9 +39,8 @@ function gaboo_core_safe_snippets()
 function gaboo_core_safe_bootstrap()
 {
     __gaboo_plugins_loaded( new Gaboo_Core_Activated_Last( __FILE__ ) );
+    __gaboo_plugins_loaded( new Gaboo_Core_Assets() );
     __gaboo_plugins_loaded( new Gaboo_Core_Jetpack_Friendly() );
-    __gaboo_plugins_loaded( new Gaboo_Core_No_Comments() );
-    __gaboo_plugins_loaded( new Gaboo_Core_PureCSS() );
 }
 
 /*
