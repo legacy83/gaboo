@@ -28,8 +28,8 @@ final class Gaboo_Core_Assets
     function register_scripts()
     {
         $cdn_path = untrailingslashit( 'https://cdnjs.cloudflare.com/ajax/libs' );
-        wp_register_style( 'gaboo-core-lodash', "$cdn_path/lodash.js/3.10.1/lodash.min.js" );
-        wp_register_style( 'gaboo-core-knockout', "$cdn_path/knockout/3.3.0/knockout-min.js" );
+        wp_register_script( 'gaboo-core-lodash', "$cdn_path/lodash.js/3.10.1/lodash.min.js", array(), FALSE, TRUE );
+        wp_register_script( 'gaboo-core-knockout', "$cdn_path/knockout/3.3.0/knockout-min.js", array(), FALSE, TRUE );
     }
 
     /**
