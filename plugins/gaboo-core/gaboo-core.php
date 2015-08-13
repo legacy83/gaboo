@@ -17,7 +17,7 @@
 add_action( 'gaboo_back_compat_safe', 'gaboo_core_safe_includes', 3 );
 add_action( 'gaboo_back_compat_safe', 'gaboo_core_safe_bootstrap', 3 );
 
-ini_set('display_errors', '1');
+ini_set( 'display_errors', '1' );
 
 /**
  * Safely continues
@@ -28,6 +28,7 @@ function gaboo_core_safe_includes()
     require_once( 'includes/class-gaboo-core-activated-last.php' );
     require_once( 'includes/class-gaboo-core-assets.php' );
     require_once( 'includes/class-gaboo-core-clip.php' );
+    require_once( 'includes/class-gaboo-core-comments.php' );
     require_once( 'includes/class-gaboo-core-jetpack-friendly.php' );
     require_once( 'includes/class-gaboo-core-lock.php' );
 }
@@ -40,6 +41,7 @@ function gaboo_core_safe_bootstrap()
 {
     __gaboo_plugins_loaded( new Gaboo_Core_Activated_Last( __FILE__ ) );
     __gaboo_plugins_loaded( new Gaboo_Core_Assets() );
+    __gaboo_plugins_loaded( new Gaboo_Core_Comments() );
     __gaboo_plugins_loaded( new Gaboo_Core_Jetpack_Friendly() );
 }
 
