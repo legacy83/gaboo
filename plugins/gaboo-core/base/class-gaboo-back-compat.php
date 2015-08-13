@@ -20,7 +20,7 @@ final class Gaboo_Back_Compat
      */
     function minimal_php()
     {
-        return version_compare( PHP_VERSION, '5.3.10', '>=' );
+        return version_compare( PHP_VERSION, '5.5.9', '>=' );
     }
 
     /**
@@ -30,7 +30,7 @@ final class Gaboo_Back_Compat
      */
     function minimal_wp()
     {
-        return version_compare( $GLOBALS[ 'wp_version' ], '4.2.3', '>=' );
+        return version_compare( $GLOBALS[ 'wp_version' ], '4.2.4', '>=' );
     }
 
     /**
