@@ -2,7 +2,6 @@
 
 /**
  * Class Gaboo_Core_Comments
- *
  */
 final class Gaboo_Core_Comments
 {
@@ -13,7 +12,7 @@ final class Gaboo_Core_Comments
 
     /**
      * The init hook
-     * ... and disallow pings and comments.
+     * ... that disallow pings and comments.
      */
     function disallow()
     {

@@ -2,7 +2,6 @@
 
 /**
  * Class Gaboo_Core_Jetpack_Friendly
- *
  */
 final class Gaboo_Core_Jetpack_Friendly
 {

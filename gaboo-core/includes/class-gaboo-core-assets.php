@@ -2,7 +2,6 @@
 
 /**
  * Class Gaboo_Core_Assets
- *
  */
 final class Gaboo_Core_Assets extends Gaboo_Assets
 {

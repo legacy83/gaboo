@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Gaboo Core
  * Plugin URI: https://github.com/trsenna/gaboo
- * Description: All the core functionality needed to build an amazing website.
+ * Description: All the core functionality needed to run a well done website.
  *
  * Version: 0.1.0
  * Author: Thiago Senna
