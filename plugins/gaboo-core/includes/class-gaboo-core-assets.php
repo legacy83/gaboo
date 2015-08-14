@@ -19,7 +19,7 @@ final class Gaboo_Core_Assets extends Gaboo_Assets
     function register_styles()
     {
         $cdn_path = untrailingslashit( 'https://cdnjs.cloudflare.com/ajax/libs/' );
-        $this->register_styles( 'normalize', "$cdn_path/normalize/3.0.3/normalize.min.css" );
+        $this->register_style( 'normalize', "$cdn_path/normalize/3.0.3/normalize.min.css" );
     }
 
     /**

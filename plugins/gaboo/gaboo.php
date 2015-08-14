@@ -15,7 +15,6 @@
  */
 
 add_action( 'gaboo_back_compat_safe', 'gaboo_safe_includes', 0 );
-add_action( 'gaboo_back_compat_safe', 'gaboo_safe_bootstrap', 0 );
 
 /**
  * Safely continues
