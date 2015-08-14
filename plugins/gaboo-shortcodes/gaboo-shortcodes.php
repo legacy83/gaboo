@@ -23,6 +23,7 @@ add_action( 'gaboo_back_compat_safe', 'gaboo_shortcodes_safe_bootstrap', 5 );
  */
 function gaboo_shortcodes_safe_includes()
 {
+    require_once( 'includes/class-gaboo-shortcodes.php' );
     require_once( 'includes/class-gaboo-shortcodes-assets.php' );
 }
 
@@ -32,5 +33,6 @@ function gaboo_shortcodes_safe_includes()
  */
 function gaboo_shortcodes_safe_bootstrap()
 {
+    __gaboo_plugins_loaded( new Gaboo_Shortcodes() );
     __gaboo_plugins_loaded( new Gaboo_Shortcodes_Assets() );
 }

@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Class Site258_Shortcodes
+ * Class Gaboo_Shortcodes
  *
  */
-final class Site258_Shortcodes extends Gaboo_Clip
+final class Gaboo_Shortcodes extends Gaboo_Clip
 {
     function __plugins_loaded()
     {
