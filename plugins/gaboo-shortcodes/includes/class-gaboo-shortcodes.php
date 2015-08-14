@@ -53,8 +53,8 @@ final class Gaboo_Shortcodes extends Gaboo_Clip
     protected function locate_template( $name )
     {
         $path = trailingslashit( plugin_dir_path( __FILE__ ) );
-        if ( file_exists( "{$path}partials/shortcodes/{$name}.php" ) ) {
-            $located = "{$path}partials/shortcodes/{$name}.php";
+        if ( file_exists( "{$path}partials/{$name}.php" ) ) {
+            $located = "{$path}partials/{$name}.php";
         }
 
         return isset( $located ) ? $located : FALSE;
