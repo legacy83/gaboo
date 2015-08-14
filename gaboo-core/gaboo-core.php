@@ -14,8 +14,8 @@
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-add_action( 'gaboo_back_compat_safe', 'gaboo_core_safe_includes', 3 );
-add_action( 'gaboo_back_compat_safe', 'gaboo_core_safe_bootstrap', 3 );
+add_action( 'gaboo_back_compat_safe', 'gaboo_core_safe_includes', 1 );
+add_action( 'gaboo_back_compat_safe', 'gaboo_core_safe_bootstrap', 1 );
 
 /**
  * Safely continues
