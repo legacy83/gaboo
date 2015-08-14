@@ -4,7 +4,7 @@
  * Class Site258_Assets
  *
  */
-final class Site258_Assets
+final class Site258_Assets extends Gaboo_Assets
 {
     function __plugins_loaded()
     {
@@ -16,8 +16,8 @@ final class Site258_Assets
      */
     function enqueue_styles()
     {
-        wp_enqueue_style( 'purecss-grids' );
-        wp_enqueue_style( 'purecss-grids-responsive' );
+        $this->enqueue_style( 'pure-grids' );
+        $this->enqueue_style( 'pure-grids-responsive' );
     }
 
 }

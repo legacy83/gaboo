@@ -4,7 +4,7 @@
  * Class Site258_Shortcodes
  *
  */
-final class Site258_Shortcodes extends Gaboo_Core_Clip
+final class Site258_Shortcodes extends Gaboo_Clip
 {
     function __plugins_loaded()
     {
