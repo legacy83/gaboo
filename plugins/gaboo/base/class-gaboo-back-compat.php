@@ -42,6 +42,7 @@ final class Gaboo_Back_Compat
     {
         $requirements = $this->minimal_php();
         $requirements = $requirements && $this->minimal_wp();
+        $requirements = $requirements && function_exists( 'gaboo_core_safe_bootstrap' );
 
         return $requirements;
     }
@@ -51,8 +52,8 @@ final class Gaboo_Back_Compat
      */
     function unsafe_notice()
     {
-        $message = __( 'Unsafe environment for running the functionality plugin!', 'gaboo' );
-        $message .= __( '&nbsp;Minimal system requirements was not satisfied.', 'gaboo' );
+        $message = __( 'Unsafe environment for running the gaboo functionality plugin!', 'gaboo' );
+        $message .= __( '&nbsp;The minimal system requirements has not been satisfied.', 'gaboo' );
         printf( '<div class="error"><p>%s</p></div>', $message );
     }
 
