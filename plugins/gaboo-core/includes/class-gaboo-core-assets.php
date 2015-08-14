@@ -4,7 +4,7 @@
  * Class Gaboo_Core_Assets
  *
  */
-final class Gaboo_Core_Assets
+final class Gaboo_Core_Assets extends Gaboo_Assets
 {
     function __plugins_loaded()
     {
@@ -18,8 +18,8 @@ final class Gaboo_Core_Assets
      */
     function register_styles()
     {
-        $cdn_path = untrailingslashit( 'https://cdnjs.cloudflare.com/ajax/libs' );
-        wp_register_style( 'gaboo-core-normalize', "$cdn_path/normalize/3.0.3/normalize.min.css" );
+        $cdn_path = untrailingslashit( 'https://cdnjs.cloudflare.com/ajax/libs/' );
+        $this->register_styles( 'normalize', "$cdn_path/normalize/3.0.3/normalize.min.css" );
     }
 
     /**
@@ -27,9 +27,9 @@ final class Gaboo_Core_Assets
      */
     function register_scripts()
     {
-        $cdn_path = untrailingslashit( 'https://cdnjs.cloudflare.com/ajax/libs' );
-        wp_register_script( 'gaboo-core-lodash', "$cdn_path/lodash.js/3.10.1/lodash.min.js", array(), FALSE, TRUE );
-        wp_register_script( 'gaboo-core-knockout', "$cdn_path/knockout/3.3.0/knockout-min.js", array(), FALSE, TRUE );
+        $cdn_path = untrailingslashit( 'https://cdnjs.cloudflare.com/ajax/libs/' );
+        $this->register_script( 'lodash', "$cdn_path/lodash.js/3.10.1/lodash.min.js" );
+        $this->register_script( 'knockout', "$cdn_path/knockout/3.3.0/knockout-min.js" );
     }
 
     /**
@@ -37,14 +37,14 @@ final class Gaboo_Core_Assets
      */
     function register_purecss_styles()
     {
-        $cdn_path = untrailingslashit( 'http://yui.yahooapis.com/pure/0.6.0' );
-        wp_register_style( 'gaboo-core-pure-base', "$cdn_path/base-min.css" );
-        wp_register_style( 'gaboo-core-pure-buttons', "$cdn_path/buttons-min.css" );
-        wp_register_style( 'gaboo-core-pure-forms', "$cdn_path/forms-min.css" );
-        wp_register_style( 'gaboo-core-pure-grids', "$cdn_path/grids-min.css" );
-        wp_register_style( 'gaboo-core-pure-grids-responsive', "$cdn_path/grids-responsive-min.css" );
-        wp_register_style( 'gaboo-core-pure-menus', "$cdn_path/menus-min.css" );
-        wp_register_style( 'gaboo-core-pure-tables', "$cdn_path/tables-min.css" );
+        $cdn_path = untrailingslashit( 'http://yui.yahooapis.com/pure/0.6.0/' );
+        $this->register_style( 'pure-base', "$cdn_path/base-min.css" );
+        $this->register_style( 'pure-buttons', "$cdn_path/buttons-min.css" );
+        $this->register_style( 'pure-forms', "$cdn_path/forms-min.css" );
+        $this->register_style( 'pure-grids', "$cdn_path/grids-min.css" );
+        $this->register_style( 'pure-grids-responsive', "$cdn_path/grids-responsive-min.css" );
+        $this->register_style( 'pure-menus', "$cdn_path/menus-min.css" );
+        $this->register_style( 'pure-tables', "$cdn_path/tables-min.css" );
     }
 
 }

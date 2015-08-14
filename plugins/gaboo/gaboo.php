@@ -23,6 +23,7 @@ add_action( 'gaboo_back_compat_safe', 'gaboo_safe_bootstrap', 0 );
  */
 function gaboo_safe_includes()
 {
+    require_once( 'includes/class-gaboo-assets.php' );
     require_once( 'includes/class-gaboo-clip.php' );
     require_once( 'includes/class-gaboo-lock.php' );
 }
