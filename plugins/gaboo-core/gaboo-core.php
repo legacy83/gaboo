@@ -25,6 +25,7 @@ function gaboo_core_safe_includes()
 {
     require_once( 'includes/class-gaboo-core-assets.php' );
     require_once( 'includes/class-gaboo-core-comments.php' );
+    require_once( 'includes/class-gaboo-core-google-fonts.php' );
     require_once( 'includes/class-gaboo-core-jetpack-friendly.php' );
 }
 

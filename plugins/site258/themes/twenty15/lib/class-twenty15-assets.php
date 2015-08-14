@@ -3,7 +3,7 @@
 /**
  * Class Twenty15_Assets
  */
-final class Twenty15_Assets
+final class Twenty15_Assets extends Gaboo_Assets
 {
     function __after_setup_theme()
     {
@@ -16,7 +16,7 @@ final class Twenty15_Assets
      */
     function fonts()
     {
-        $google_fonts = new Twenty15_Google_Fonts();
+        $google_fonts = new Gaboo_Core_Google_Fonts();
         $google_fonts->family(
             'Noto Sans:400italic,700italic,400,700',
             /*

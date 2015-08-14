@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Class Twenty15_Google_Fonts
+ * Class Gaboo_Core_Google_Fonts
  */
-final class Twenty15_Google_Fonts
+final class Gaboo_Core_Google_Fonts
 {
     private $fonts = array();
 
@@ -31,7 +31,7 @@ final class Twenty15_Google_Fonts
             $fonts_url = add_query_arg( array(
                 'family' => urlencode( implode( '|', $this->fonts ) ),
                 'subset' => urlencode( $this->subsets() ),
-            ), 'https://fonts.googleapis.com/css' );
+            ), '//fonts.googleapis.com/css' );
         }
 
         return isset( $fonts_url ) ? esc_url_raw( $fonts_url ) : '';
@@ -50,7 +50,7 @@ final class Twenty15_Google_Fonts
          * Translators: To add an additional character subset specific to your language,
          * translate this to 'greek', 'cyrillic', 'devanagari' or 'vietnamese'. Do not translate into your own language.
          */
-        $subset = _x( 'no-subset', 'Add new subset (greek, cyrillic, devanagari, vietnamese)', 'twenty15' );
+        $subset = _x( 'no-subset', 'Add new subset (greek, cyrillic, devanagari, vietnamese)', 'gaboo-core' );
         if ( 'cyrillic' == $subset ) {
             $subsets .= ',cyrillic,cyrillic-ext';
         } elseif ( 'greek' == $subset ) {

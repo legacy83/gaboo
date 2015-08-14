@@ -11,8 +11,6 @@
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-require_once( 'inc/class-twenty15-google-fonts.php' );
-
 /*
  * Turn on the lights
  * ... and bootstrap the theme
