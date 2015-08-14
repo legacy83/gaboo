@@ -24,7 +24,6 @@ add_action( 'gaboo_back_compat_safe', 'site258_safe_themes' );
  */
 function site258_safe_includes()
 {
-    require_once( 'functionality/public/class-site258-assets.php' );
     require_once( 'functionality/public/class-site258-shortcodes.php' );
 }
 
@@ -34,7 +33,6 @@ function site258_safe_includes()
  */
 function site258_safe_bootstrap()
 {
-    __gaboo_plugins_loaded( new Site258_Assets() );
     __gaboo_plugins_loaded( new Site258_Shortcodes() );
 }
 

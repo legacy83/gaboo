@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Class Site258_Assets
+ * Class Gaboo_Shortcodes_Assets
  *
  */
-final class Site258_Assets extends Gaboo_Assets
+final class Gaboo_Shortcodes_Assets extends Gaboo_Assets
 {
     function __plugins_loaded()
     {

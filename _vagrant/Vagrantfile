@@ -10,6 +10,7 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder "../plugins/gaboo-core", "/var/www/www.192.168.27.14.xip.io/public_html/wp-content/plugins/gaboo-core"
   config.vm.synced_folder "../plugins/gaboo-lock", "/var/www/www.192.168.27.14.xip.io/public_html/wp-content/plugins/gaboo-lock"
   config.vm.synced_folder "../plugins/gaboo-piwik", "/var/www/www.192.168.27.14.xip.io/public_html/wp-content/plugins/gaboo-piwik"
+  config.vm.synced_folder "../plugins/gaboo-shortcodes", "/var/www/www.192.168.27.14.xip.io/public_html/wp-content/plugins/gaboo-shortcodes"
   config.vm.synced_folder "../plugins/site258", "/var/www/www.192.168.27.14.xip.io/public_html/wp-content/plugins/site258"
  
 end
