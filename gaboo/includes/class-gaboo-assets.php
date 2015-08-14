@@ -2,7 +2,6 @@
 
 /**
  * Class Gaboo_Assets
- *
  */
 abstract class Gaboo_Assets
 {

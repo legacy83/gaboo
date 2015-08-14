@@ -2,7 +2,6 @@
 
 /**
  * Class Gaboo_Clip
- *
  */
 abstract class Gaboo_Clip
 {

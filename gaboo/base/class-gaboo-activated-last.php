@@ -2,7 +2,6 @@
 
 /**
  * Class Gaboo_Activated_Last
- *
  */
 final class Gaboo_Activated_Last
 {

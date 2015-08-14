@@ -2,7 +2,6 @@
 
 /**
  * Class Gaboo_Lock
- *
  */
 final class Gaboo_Lock
 {

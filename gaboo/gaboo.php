@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Gaboo
  * Plugin URI: https://github.com/trsenna/gaboo
- * Description: It's just the enough functionality needed to safely bootstrap your website.
+ * Description: It's just enough functionality to safely bootstrap the current website.
  *
  * Version: 0.1.0
  * Author: Thiago Senna
