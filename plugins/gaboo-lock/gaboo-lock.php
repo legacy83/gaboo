@@ -14,7 +14,7 @@
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-//add_action( 'gaboo_back_compat_safe', 'gaboo_lock_safe_bootstrap', 5 );
+add_action( 'gaboo_back_compat_safe', 'gaboo_lock_safe_bootstrap', 3 );
 
 /**
  * Safely turn on the lights
@@ -22,5 +22,5 @@
  */
 function gaboo_lock_safe_bootstrap()
 {
-//    __gaboo_run( new Gaboo_Core_Lock() );
+    __gaboo_run( new Gaboo_Lock() );
 }

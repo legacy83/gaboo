@@ -14,7 +14,7 @@
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-//add_action( 'gaboo_back_compat_safe', 'gaboo_core_safe_includes', 3 );
+add_action( 'gaboo_back_compat_safe', 'gaboo_core_safe_includes', 3 );
 //add_action( 'gaboo_back_compat_safe', 'gaboo_core_safe_bootstrap', 3 );
 
 /**
@@ -24,10 +24,8 @@
 function gaboo_core_safe_includes()
 {
 //    require_once( 'includes/class-gaboo-core-assets.php' );
-//    require_once( 'includes/class-gaboo-core-clip.php' );
 //    require_once( 'includes/class-gaboo-core-comments.php' );
 //    require_once( 'includes/class-gaboo-core-jetpack-friendly.php' );
-//    require_once( 'includes/class-gaboo-core-lock.php' );
 }
 
 /**
