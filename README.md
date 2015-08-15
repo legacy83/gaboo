@@ -1,5 +1,5 @@
 # Gaboo
-Gaboo is a collection of simple plugins that allows me to focus on building and running well coded websites with WordPress without loosing myself.
+Gaboo is a collection of simple plugins that allows me to focus on building and running well coded websites with WordPress without loosing myself. Yeah, I just hate when something ends up disorganizing.
 
 ## gaboo
 It's just enough functionality to safely bootstrap a website.
