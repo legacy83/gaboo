@@ -1,2 +1,11 @@
-# parent2child-blueprints
-Blueprints to easily get started with child themes from my favorite WordPress parent themes.
+# Gaboo
+Gaboo is a collection of simple plugins that allows me to focus on building and running well coded websites with WordPress without loosing myself.
+
+## gaboo
+It's just enough functionality to safely bootstrap a website.
+
+## gaboo-core
+All the core functionality needed to run a well done website.
+
+## gaboo-lock
+Protects a website to be accidentally destroyed.
