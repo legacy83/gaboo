@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/trsenna/gaboo
  * Description: It's just enough functionality to safely bootstrap the current website.
  *
- * Version: 0.1.0
+ * Version: 0.2.0
  * Author: Thiago Senna
  * Author URI: http://thremes.com.br
  *
