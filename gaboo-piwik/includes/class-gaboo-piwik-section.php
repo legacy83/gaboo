@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Class Gaboo_Piwik_Section
+ */
 final class Gaboo_Piwik_Section
 {
     function __plugins_loaded()

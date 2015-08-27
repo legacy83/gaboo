@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Class Gaboo_Piwik_Options
+ */
 final class Gaboo_Piwik_Options
 {
     const GROUP = 'gaboo_piwik_options_group';
