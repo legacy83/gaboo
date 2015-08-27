@@ -13,3 +13,25 @@
  * @copyright Copyright (c) 2015, Thiago Senna
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
+
+add_action( 'gaboo_back_compat_safe', 'gaboo_piwik_safe_includes' );
+add_action( 'gaboo_back_compat_safe', 'gaboo_piwik_safe_bootstrap' );
+
+/**
+ * Safely continues
+ * ... with the includes needed by the plugin
+ */
+function gaboo_piwik_safe_includes()
+{
+    require_once( 'includes/gaboo-piwik-functions.php' );
+    require_once( 'includes/class-gaboo-piwik-options.php' );
+}
+
+/**
+ * Safely continues
+ * ... with the plugin bootstrap
+ */
+function gaboo_piwik_safe_bootstrap()
+{
+    __gaboo_plugins_loaded( new Gaboo_Piwik_Options() );
+}
