@@ -15,13 +15,9 @@ final class Gaboo_Piwik_Options
      */
     function admin_menu()
     {
-        add_options_page(
-            __( 'Web Analytics Settings', 'gaboo-piwik' ),
-            __( 'Web Analytics', 'gaboo-piwik' ),
-            'manage_options',
-            self::PAGE,
-            array( $this, 'options_page' )
-        );
+        $page_title = __( 'Web Analytics Settings', 'gaboo-piwik' );
+        $menu_title = __( 'Web Analytics', 'gaboo-piwik' );
+        add_options_page( $page_title, $menu_title, 'manage_options', self::PAGE, array( $this, 'options_page' ) );
     }
 
     /**
