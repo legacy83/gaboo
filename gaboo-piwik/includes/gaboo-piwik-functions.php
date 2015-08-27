@@ -8,7 +8,7 @@
 function gaboo_piwik_get()
 {
     return get_option( 'gaboo_piwik', array(
-        'location' => '//piwik.192.168.27.12.xip.io/',
+        'location' => '//piwik.192.168.27.14.xip.io/',
         'site_id' => 1,
     ) );
 }
