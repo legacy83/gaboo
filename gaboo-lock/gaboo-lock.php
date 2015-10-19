@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Gaboo Lock
+ * Plugin Name: Gaboo \\ Lock
  * Plugin URI: https://github.com/trsenna/gaboo
  * Description: Protects the current website to be accidentally destroyed.
  *

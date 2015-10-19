@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Gaboo Core
+ * Plugin Name: Gaboo \\ Core
  * Plugin URI: https://github.com/trsenna/gaboo
  * Description: All the core functionality needed to run a well done website.
  *

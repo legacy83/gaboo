@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Gaboo Piwik
+ * Plugin Name: Gaboo \\ Piwik
  * Plugin URI: https://github.com/trsenna/gaboo
  * Description: Piwik Web Analytics, the leading open-source analytics platform that give us more than just powerful analytics.
  *
