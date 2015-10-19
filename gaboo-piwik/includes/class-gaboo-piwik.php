@@ -16,9 +16,7 @@ final class Gaboo_Piwik
     function the_tracking_code()
     {
         extract( gaboo_piwik_get() );
-
-        $templates_path = plugin_dir_path( dirname( __FILE__ ) );
-        $templates_path = untrailingslashit( $templates_path );
-        include( "{$templates_path}/templates/tracking-code.php" );
+        $templates_path = gaboo_piwik_templates_dir_path();
+        include( "{$templates_path}/tracking-code.php" );
     }
 }
