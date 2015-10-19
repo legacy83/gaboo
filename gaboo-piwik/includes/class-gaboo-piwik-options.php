@@ -28,6 +28,8 @@ final class Gaboo_Piwik_Options
      */
     function options_page()
     {
-        include( 'partials/options-page.php' );
+        $templates_path = plugin_dir_path( dirname( __FILE__ ) );
+        $templates_path = untrailingslashit( $templates_path );
+        include( "{$templates_path}/templates/options-page.php" );
     }
 }

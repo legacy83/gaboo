@@ -26,7 +26,10 @@ final class Gaboo_Piwik_Section
     function section_callback()
     {
         extract( gaboo_piwik_get() );
-        include( 'partials/section-piwik.php' );
+
+        $templates_path = plugin_dir_path( dirname( __FILE__ ) );
+        $templates_path = untrailingslashit( $templates_path );
+        include( "{$templates_path}/templates/section-piwik.php" );
     }
 
     /**
