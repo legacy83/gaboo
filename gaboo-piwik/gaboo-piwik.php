@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/trsenna/gaboo
  * Description: Piwik Web Analytics, the leading open-source analytics platform that give us more than just powerful analytics.
  *
- * Version: 0.2.0
+ * Version: 0.3.0
  * Author: Thiago Senna
  * Author URI: http://thremes.com.br
  *

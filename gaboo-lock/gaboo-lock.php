@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/trsenna/gaboo
  * Description: Protects the current website to be accidentally destroyed.
  *
- * Version: 0.2.0
+ * Version: 0.3.0
  * Author: Thiago Senna
  * Author URI: http://thremes.com.br
  *
