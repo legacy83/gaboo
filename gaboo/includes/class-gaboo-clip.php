@@ -8,16 +8,16 @@ abstract class Gaboo_Clip
     /**
      * Render/Clip the template
      *
-     * @param       $name
+     * @param       $template
      * @param array $model
      *
      * @return string
      */
-    function render( $name, array $model = array() )
+    function render( $template, array $model = array() )
     {
         ob_start();
 
-        $located = $this->locate_template( $name );
+        $located = $this->locate_template( $template );
         if ( $located ) {
             if ( is_array( $model ) ) extract( $model );
             include( "$located" );
@@ -29,27 +29,27 @@ abstract class Gaboo_Clip
     /**
      * Render/Clip template and make the query available.
      *
-     * @param          $name
+     * @param          $template
      * @param WP_Query $the_query
      * @param array    $model
      *
      * @return string
      */
-    function render_query( $name, WP_Query $the_query, array $model = array() )
+    function render_query( $template, WP_Query $the_query, array $model = array() )
     {
         if ( is_array( $model ) ) {
             $model[ 'the_query' ] = $the_query;
         }
 
-        return $this->render( $name, $model );
+        return $this->render( $template, $model );
     }
 
     /**
      * Locate the template
      *
-     * @param $name
+     * @param $template
      *
      * @return bool|string
      */
-    abstract protected function locate_template( $name );
+    abstract protected function locate_template( $template );
 }
