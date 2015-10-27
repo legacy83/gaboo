@@ -9,6 +9,3 @@ All the core functionality needed to run a well done website.
 
 ## gaboo-lock
 Protects a website to be accidentally destroyed.
-
-## gaboo-piwik
-Piwik Web Analytics, the leading open-source analytics platform that give us more than just powerful analytics.
